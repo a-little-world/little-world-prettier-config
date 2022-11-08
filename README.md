@@ -13,7 +13,7 @@ To use this shared prettier config in a repository, add the prettier property to
 {
   "name": "little-world-repo",
   // ...
-  "prettier": "little-world/little-world-prettier-config"
+  "prettier": "a-little-world/little-world-prettier-config"
   // ...
 }
 
