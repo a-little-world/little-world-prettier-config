@@ -7,13 +7,15 @@ To update, add or remove [options](https://prettier.io/docs/en/options.html), ed
 
 ## Using the config
 
-To use this shared prettier config in a repository, add the prettier property to your `package.json`:
+To use this shared prettier config in a repository, first install the config: ` npm install --save-dev little-world-prettier-config`.
+
+Then add the prettier property to your `package.json`:
 
 ```
 {
   "name": "little-world-repo",
   // ...
-  "prettier": "a-little-world/little-world-prettier-config"
+  "prettier": "little-world-prettier-config"
   // ...
 }
 
