@@ -1,5 +1,5 @@
 {
-  "name": "little-world-prettier-config",
+  "name": "@a-little-world/little-world-prettier-config",
   "version": "1.0.1",
   "description": "A shared prettier config for Little World repos",
   "main": "index.json",
@@ -8,6 +8,9 @@
     "prettier",
     "prettier-config"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/a-little-world/little-world-prettier-config"
