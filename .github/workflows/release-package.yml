@@ -13,7 +13,6 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - run: npm run build
       - run: |
           echo @a-little-world:https://npm.pkg.github.com/ > build/.npmrc
           echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
