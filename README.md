@@ -1,4 +1,5 @@
 # little-world-prettier-config
+
 Shared [Prettier](https://prettier.io/) config to be used across applicable Little World repos.
 
 Prettier has language support for JavaScript, JSX, Angular, Vue, Flow, TypeScript, CSS, HTML, JSON, GraphQL, Markdown and YAML.
@@ -7,7 +8,7 @@ To update, add or remove [options](https://prettier.io/docs/en/options.html), ed
 
 ## Using the config
 
-To use this shared prettier config in a repository, first install the config: ` npm install --save-dev little-world-prettier-config`.
+To use this shared prettier config in a repository, first install the config: ` npm install --save-dev @a-little-world/little-world-prettier-config`.
 
 Then add the prettier property to your `package.json`:
 
@@ -15,10 +16,19 @@ Then add the prettier property to your `package.json`:
 {
   "name": "little-world-repo",
   // ...
-  "prettier": "little-world-prettier-config"
+  "prettier": "@a-little-world/little-world-prettier-config"
   // ...
 }
 
+```
+
+Then to make it play nicely with eslint, you need to ensure the following is set in your eslint config (in the consumer repository)
+
+```
+  extends: [
+    'prettier',
+  ],
+  plugins: ['prettier'], // make sure its at the end of list
 ```
 
 ## Publish updates
