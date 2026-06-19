@@ -6,6 +6,7 @@
   "singleQuote": true,
   "bracketSpacing": true,
   "trailingComma": "all",
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
   "importOrder": ["^components/(.*)$", "^[./]"],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true
