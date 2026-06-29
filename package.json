@@ -1,6 +1,6 @@
 {
   "name": "@a-little-world/little-world-prettier-config",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "A shared prettier config for Little World repos",
   "main": "index.json",
   "license": "MIT",
@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/a-little-world/little-world-prettier-config",
   "dependencies": {
-    "@trivago/prettier-plugin-sort-imports": "^4.3.0"
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.1"
+  },
+  "peerDependencies": {
+    "prettier": "^3.0.0"
   },
   "packageManager": "pnpm@10.22.0"
 }

@@ -6,7 +6,20 @@
   "singleQuote": true,
   "bracketSpacing": true,
   "trailingComma": "all",
-  "importOrder": ["^components/(.*)$", "^[./]"],
-  "importOrderSeparation": true,
-  "importOrderSortSpecifiers": true
+  "plugins": [
+    "@ianvs/prettier-plugin-sort-imports"
+  ],
+  "importOrder": [
+    "<BUILTIN_MODULES>",
+    "^react$",
+    "^react/(.*)$",
+    "^react-native$",
+    "^react-native/(.*)$",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@/(.*)$",
+    "",
+    "^[./]"
+  ]
 }
