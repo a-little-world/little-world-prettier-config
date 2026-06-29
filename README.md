@@ -8,7 +8,7 @@ To update, add or remove [options](https://prettier.io/docs/en/options.html), ed
 
 ## Using the config
 
-To use this shared prettier config in a repository, first install the config: ` npm install --save-dev @a-little-world/little-world-prettier-config`.
+To use this shared prettier config in a repository, first install the config: `pnpm add -D @a-little-world/little-world-prettier-config`.
 
 Then add the prettier property to your `package.json`:
 
@@ -38,4 +38,4 @@ Whenever the share config is updated, the version must be bumped and that new ve
 Bump the version number by editing the `version` in `package.json`
 
 To publish run the following command in your terminal when at the root of the cloned repo:
-`npm publish`
+`pnpm publish`
